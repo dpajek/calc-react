@@ -11,7 +11,14 @@
     text-align: right;
     padding-left: 0.5em;
     padding-right: 0.5em;
+
 }
+
+@media (max-width: 800px) {
+    .CalculatorDisplay {
+        width: (80vw + 6px);
+      }
+  }
 
 .CalculatorDisplay .BreadCrumbs {
     font-size: 0.5em;

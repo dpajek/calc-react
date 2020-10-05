@@ -1,9 +1,17 @@
 .CalculatorKeyPad {
   display: grid;
-  grid-template-columns: repeat(4, min(2em, 25vw));
-  grid-template-rows: repeat(4, min(2em, 25vw));
+  grid-template-columns: repeat(4, min(2em, 24vw));
+  grid-template-rows: repeat(4, min(2em, 24vw));
   gap: 0.05em;
 }
+
+@media (max-width: 800px) {
+    .CalculatorKeyPad {
+        grid-template-columns: repeat(4, 20vw);
+        grid-template-rows: repeat(4, 20vw);
+        gap: 2px;
+      }
+  }
 
 button {
     background-color: grey;
@@ -11,6 +19,7 @@ button {
     border: none;
     font-size: inherit;
     font-family: inherit;
+    text-align: center;
   }
 
   button:hover {
