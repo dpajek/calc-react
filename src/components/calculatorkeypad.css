@@ -1,0 +1,22 @@
+.CalculatorKeyPad {
+  display: grid;
+  grid-template-columns: repeat(4, min(2em, 25vw));
+  grid-template-rows: repeat(4, min(2em, 25vw));
+  gap: 0.05em;
+}
+
+button {
+    background-color: grey;
+    border-radius: 5px;
+    border: none;
+    font-size: inherit;
+    font-family: inherit;
+  }
+
+  button:hover {
+    border: 1px solid #444;
+  }
+  
+button:focus {
+    outline: none;
+  }
