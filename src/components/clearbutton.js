@@ -5,7 +5,7 @@ function ClearButton(props) {
   const { onClick } = props;
   return (
     <button className="ClearButton" onClick={onClick}>
-      clear
+      clr
     </button>
   );
 }
