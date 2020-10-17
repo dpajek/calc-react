@@ -30,6 +30,9 @@ jobs:
       
       - name: Build and deploy
         run: |
-          git config --local user.email "$(git log --format='%ae' HEAD^!)"
-          git config --local user.name "$(git log --format='%an' HEAD^!)"
+          git config --global user.name $user_name
+          git config --global user.email $user_email
           npm run deploy
+        env:
+          user_name: 'github-actions[bot]'
+          user_email: 'github-actions[bot]@users.noreply.github.com'
