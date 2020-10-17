@@ -1,4 +1,5 @@
 # calc-react
+![CD](https://github.com/dpajek/calc-react/workflows/auto-deploy/badge.svg)
 
 This is a simple calculator built with React. Mostly, I was experimenting with state hooks.
 
